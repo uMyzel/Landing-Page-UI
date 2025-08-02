@@ -8,13 +8,6 @@
     box-sizing: border-box;
 
 }
-.gradient{
-    display: none;
-}
-html, body{
-    width: 100%;
-    height: 100%;
-}
 
 :root{
     --color-text-primary: #000;
@@ -23,6 +16,13 @@ html, body{
     --bg-color2:#F4F5F7; 
 }
 
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
 .flex{ display: flex; }
 .grid{ display: grid; }
 .block{ display: block;}
@@ -30,114 +30,100 @@ html, body{
 /* =================================== */
 /* Estilização Header */
 /* =================================== */
-#header-index{
+
+#hero{ 
+    width: 100vw;
     height: 100vh;
-    padding: 0px 1.5rem;
+    background-image: url(../img/bg-header.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: bottom;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../img/bg-header.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    align-items: center;
 }
 
-.titulo-primario{
-    max-width: 800px;
+#gradient{
+    display: none;
+}
+
+#hero_content{
+    width: 93.70%;
+}
+
+.hero_titulo{
     font-weight: 800;
     font-size: 4rem;
     line-height: 5.125rem;
-    margin-left: 141px;
 }
-
-.paragrafo-header{
-    max-width: 800px;
-    margin-top: 15px;
+.hero_paragrafo{
+    margin-top: 2rem;
     font-size: 1.25rem;
     line-height: 2.25rem;
     letter-spacing: 0.2px;
-    margin-left: 141px;
+
 }
 
 
 
 
-/* =================================== */
-/* Estilização responsiva */
-/* =================================== */
 
-@media (max-width: 1024px){
-
+/* =================================== */
+/* Responsividade */
+/* =================================== */
+@media screen and (max-width: 1024px) { /* Tablet Comumn*/
     html{
-        font-size: 12px;
+        font-size: 14px;
     }
-    #header-index{
+
+    #hero{
         background-image: url(../img/bg-header-1024px.svg);
-        background-repeat: no-repeat;
+        background-position: center right;
         background-size: cover;
-        /* background-position-x: 50%;
-        background-position-y: center; */
     }
-
-    .titulo-primario, 
-    .paragrafo-header{
-        margin-left: 80px;
-    }
-
 }
 
-@media (max-width: 375px){
-
-    html{
-        font-size: 10.5px;
+@media screen and (max-width: 375px){
+     html{
+        font-size: 10px;
     }
-
-    #header-index{
+    #hero{
+        position: relative;
+    }
+    #gradient{
         display: flex;
-        align-items: center;
-        text-align: center;
-        background-image: url(../img/bg-header-1024px.svg);
-        background-position-x: -700px;
-        z-index: -2;
-
-    }
-
-
-    .titulo-primario, 
-    .paragrafo-header{
-        margin: 0;
-        
-
-    }
-    .block{
-        display: inline;
-    }
-
-    .header-textos{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bg-header-mobile.svg);
         z-index: 2;
     }
 
-    .gradient{
-        position: absolute;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        border: 1px solid red;
-        background-image: url(../img/bg-header-mobile.svg);
+    #hero{
+        background-position-x: 500px;
     }
-
-}
-
-@media (max-width: 600px){
-     #header-index{
-        align-items: center;
+    #hero_content{
+        width: 96.25%;
+        z-index: 3;
         text-align: center;
-        padding: 0px 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .hero_titulo,
+    .hero_paragrafo{
+        text-align: center;
     }
 
-    .titulo-primario, 
-    .paragrafo-header{
-        margin: 0;
-        
+    .hero_paragrafo_span,
+    .hero_titulo_span{
+        display:  inline;
 
     }
+
 }
+
+
+
