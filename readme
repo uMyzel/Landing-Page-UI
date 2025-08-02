@@ -1,0 +1,58 @@
+# Landing Page UI – Projeto DNC
+
+Este é um projeto de **Landing Page responsiva** desenvolvido como parte do conteúdo do curso de **Engenharia de Software da Escola DNC**. A página apresenta uma estrutura moderna, com uso de boas práticas de HTML5, CSS3 e responsividade, utilizando fontes do Google Fonts e organização de camadas com `z-index` e `linear-gradient`.
+
+---
+
+## 📁 Estrutura do Projeto
+
+📦 projeto-landing-page/
+├── index.html
+├── assets/
+│ ├── css/
+│ │ ├── reset.css
+│ │ └── style.css
+│ ├── js/
+│ │ └── main.js
+│ └── img/
+│ ├── bg-header.svg
+│ ├── bg-header-1024px.svg
+│ └── bg-header-mobile.svg
+
+
+
+---
+
+## ✨ Funcionalidades
+
+- Layout totalmente responsivo (desktop, tablet e mobile)
+- Gradiente aplicado com `linear-gradient` sobre a imagem de fundo
+- Hierarquia visual com `z-index`
+- Tipografia moderna com as fontes **Manrope**, **Karla** e **Inter**
+- Código limpo e organizado, com reutilização de classes (`.flex`, `.block`, `.grid`, etc.)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- CSS3 (com uso de variáveis CSS, media queries e responsividade)
+- Google Fonts
+- Flexbox
+
+---
+
+## 📱 Responsividade
+
+A página se adapta a diferentes tamanhos de tela:
+- `>1024px`: layout desktop com espaçamento à esquerda
+- `<=1024px`: layout para tablets com imagens adaptadas
+- `<=375px`: layout mobile com texto centralizado e imagem ajustada
+
+
+Obs: Não se adapta dinamicamente, se adapta nos breakpoint.
+
+
+
+📄 Licença
+Este projeto é de uso acadêmico e pessoal. Sinta-se à vontade para estudar, modificar e adaptar conforme suas necessidades.
