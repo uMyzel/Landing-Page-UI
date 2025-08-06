@@ -63,9 +63,323 @@ html, body{
     letter-spacing: 0.2px;
 
 }
+/* =================================== */
+/* Estrutura main > section services */
+/* =================================== */
+#servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 93.70%;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+.servicos-textos h2{
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 100%;
+    text-align: center;
+}
+.servicos-textos p{
+    width: 70%;
+    padding: 30px;
+    font-size: 1.25rem;
+    line-height: 2.47rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.servicos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 5.31rem;
+    padding: 4rem 0 0 0 ;
+   
+}
+.servicos-grid-items{
+    text-align: center;
+}
+
+.servicos-grid-items h3{
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-align: center;
+    margin: .5rem 0 .4rem 0;
+}
+
+.servicos-grid-items span{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/* =================================== */
+/* Estrutura main > section referencias */
+/* =================================== */
+#referencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #D4D9E833;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6rem 0 ;
+}
+.referencias-textos h2{
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.referencias-textos span{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+}
+
+.referencias-grid{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.referencias-cards-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 96px;
+    border-radius: 16px;
+}
+.referencias-cards-grid img{
+    width: 60%;
+}
+.company1{ 
+    grid-area: 1/3;
+} 
+
+.company2{ 
+    grid-area: 2/2;
+} 
+.company3{ 
+    grid-area: 2/3;
+} 
+.company4{ 
+    grid-area: 2/4;
+} 
+.company5{ 
+    grid-area: 3/1;
+} 
+.company6{ 
+    grid-area: 3/2;
+} 
+.company7{ 
+    grid-area: 3/3;
+} 
+.company8{ 
+    grid-area: 3/4;
+} 
+.company9{ 
+    grid-area: 3/5;
+} 
+/* =================================== */
+/* Estrutura main >  r /csection ofertas */
+/* =================================== */
+#ofertas{
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color1);
+    color: var(--color-text-secondary);
+}
+.ofertas-titulo{
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+
+}
+.ofertas-span{
+    margin-top: 0.7rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.ofertas-boxCards{
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem
+}
+.ofertas-boxCards > strong{
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+
+#article{
+    padding: 9rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-container{
+    width: 83.125%;
+    max-width: 80rem;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+
+#article-um{
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.article-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.box-btn{
+    width: 69%;
+    display: flex;
+}
+
+.article-img{
+    flex: 0.;                                                                                           
+}
+
+#article-dois{
+    padding: 5rem 0rem 0rem 0rem;
+    flex-direction: row-reverse;
+}
+.button{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px;
+    gap: 10px;
+    background-color: var(--bg-color1);
+    color: var(--color-text-secondary);
+    border: 0;
+    cursor: pointer;
+
+}
+#article-dois > .article-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.article-texto-titulo{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.75rem;
+}
+
+.article-texto-paragrafo{
+    line-height: 2rem;
+    margin-top: 20px;
+}
 
 
 
+/* =================================== */
+/* Estrutura main > contato
+/* =================================== */
+#contato{
+    padding: 10rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contato-box h2{
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+}
+.contato-box strong{
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding: 3rem 0rem;
+}
+
+.contato-box button{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 12px;
+    gap: 10px;
+    background-color: var(--bg-color1);
+    color: var(--color-text-secondary);
+    border: 0;
+    cursor: pointer;;
+}
+
+
+/* footer */
+
+#footer{
+    background-color: var(--bg-color1);
+    color: white;
+
+    padding: 5rem 0;
+}
+.footer-navigator{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-navigator ul{
+    list-style-type: none;
+}
+
+.footer-navigator ul li {
+    padding: 5px;
+    font-family: Inter;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.footer-navigator-ul{
+    font-family: Inter;
+    font-weight: 700 !important;
+    line-height:  1.5rem !important;
+
+}
+
+
+.footer-info{
+    margin: 4rem 0px 0px 11rem;
+}
 
 
 /* =================================== */
